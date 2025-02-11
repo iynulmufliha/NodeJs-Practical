@@ -1,0 +1,17 @@
+const rls = require('readline-sync');
+console.log("array")
+function array1() {
+  const arr = [];
+  for (let i = 0; i < 5; i++) {
+    let x = parseInt(rls.question("Enter number: "));
+    if (!isNaN(x)) {
+      arr.push(x);
+    } else {
+      console.log("Invalid input");
+      i--;
+    }
+  }
+  console.log(arr);
+}
+
+array1();
